@@ -1,0 +1,133 @@
+/****** all similar code contents ******/
+.home, .about, .skills, .projects, 
+.services, .contact {
+    font-family: var(--Poppins);
+}
+section {
+    padding: 30px 0;
+   
+}
+section.home{
+  margin-bottom: -200px;
+}
+section  .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    font-weight: 500;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 180px;
+    height: 4px;
+    background: #111;
+    transform: translateX(-50%);
+}
+section .title::after{
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    font-size: 20px;
+    color: var(--text-pink);
+    padding: 5px;
+    background-color: var(--white);
+    transform: translateX(-50%);
+}
+/****** about section css ******/
+
+
+
+
+/****** project section css ******/
+
+.projects .title::after {
+  content: "what I did"
+}
+
+.projects .project-content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.projects .card .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.projects .project-content .card {
+  position: relative;
+  width: calc(33% - 20px);
+  height: 185px;
+  background: #222;
+  text-align: center;
+  border-radius: 6px;
+  padding: 20px 25px;
+  cursor: pointer;
+  margin-bottom: 25px;
+  transition: all .3s ease;
+}
+
+.projects .project-content .card .box {
+  transition: all .3s ease;
+}
+
+.projects .project-content .card .box h2 {
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+.projects .project-content .card .box  p {
+  font-size: 17px;
+  color: lightgray !important;
+  padding-bottom: 30px;
+}
+.projects .project-content .card .box h2 + p {
+  font-size: 13px;
+  padding-bottom: 5px;
+}
+.projects .project-content .card .box .span-one {
+  display: inline !important;
+  position: absolute;
+  bottom: 8px;
+  left: 15px;
+  font-weight: bold;
+}
+.projects .project-content .card .box .span-two {
+  display: inline !important;
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  font-weight: bold;
+}
+.projects .project-content .card .box span i {
+  font-size: 17px;
+  color: lightgray;
+  transition: color .3s ease;
+  text-decoration: none;
+  padding-right: 10px;
+}
+@media (max-width: 1000PX) {
+  .projects .project-content .card .box p {
+    font-size: 17px;
+}
+.projects .project-content .card .box h2 + p {
+    font-size: 11px;
+}
+.projects .project-content .card .box span i {
+    font-size: 13px;
+}
+
+.projects .project-content .card {
+    width: 100%;
+}
+}
+
+/***x*** project section css ***x***/
